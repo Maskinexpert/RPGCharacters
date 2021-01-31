@@ -4,7 +4,7 @@ import armor.armorTypes.EquipmentSlots;
 public abstract class Armor{
   protected String armorName;
   protected EquipmentSlots armorSlot;
-  protected int armorLvl;
+  protected int armorLevel;
   protected int hpBonus;
   protected int strBonus;
   protected int dexBonus;
@@ -26,8 +26,8 @@ public abstract class Armor{
   public int getInt(){
     return intBonus;
   }
-  public int getLvl(){
-    return armorLvl;
+  public int getLevel(){
+    return armorLevel;
   }
   public int getArmorSlot(){
     return armorSlot.getSlot();

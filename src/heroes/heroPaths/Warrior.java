@@ -13,21 +13,21 @@ public class Warrior extends Heroes {
     this.dexterity = 3;
     this.intelligence = 1;
     this.currentExp = 0;
-    this.nextLvlExp = 100;
-    this.currentLvl = 1;
+    this.nextLevelExp = 100;
+    this.currentLevel = 1;
     this.equippedArmor = new Armor[3];
     //this.equippedWeapon = ;
   }
   @Override
-  protected void lvlUp(){
+  protected void levelUp(){
     maxHealth = maxHealth + 30;
     strength = strength + 5;
     dexterity = dexterity + 3;
     intelligence = intelligence + 1;
-    currentExp = currentExp - nextLvlExp;
-    nextLvlExp = (int) Math.floor(nextLvlExp * 1.1);
+    currentExp = currentExp - nextLevelExp;
+    nextLevelExp = (int) Math.floor(nextLevelExp * 1.1);
     System.out.println("LEVEL UP!");
-    currentLvl = currentLvl + 1;
+    currentLevel = currentLevel + 1;
     
   }
 }
