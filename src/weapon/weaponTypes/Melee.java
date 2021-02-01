@@ -1,19 +1,17 @@
 package weapon.weaponTypes;
 
 import weapon.Weapon;
-import weapon.weaponTypes.WeaponFlair;
 import weapon.weaponTypes.WeaponTypes;
 
+/* The Melee class is a subclass of the Weapon superclass.
+   It takes a weapon level its inputs */
 public class Melee extends Weapon {
   
   public Melee (int weaponLevel){
     this.weaponLevel = weaponLevel;
-    this.weaponName = "Melee "; // add flair;
+    this.weaponName = "Flaming Axe of Toasting";
     this.weaponType = WeaponTypes.Melee;
-    //TODO give EquipmentSlots a (double) getStatBoon function to calculate item slot boon  
-    
     this.weaponDamage = 15 + (2*(weaponLevel-1));
-    
   }
   
 }

@@ -4,18 +4,18 @@ import heroes.heroPaths.PathTypes;
 import armor.Armor;
 
 
-/* The Warrior class is a subclass of the Heroes superclass. It takes a name is input.
-   The Warrior type hero is mainly focused on melee combat and the strength attribute. */
-public class Warrior extends Heroes {
+/* The Ranger class is a subclass of the Heroes superclass. It takes a name is input.
+   The Ranger type hero is mainly focused on ranged combat and the dexterity attribute. */
+public class Ranger extends Heroes {
   
-  /* Initializing a Warrior object with the attribute values for a Warrior Hero. */
-  public Warrior (String heroName){
+  /* Initializing a Ranger object with the attribute values for a Ranger Hero. */
+  public Ranger (String heroName){
     this.heroName = heroName;
-    this.heroPath = PathTypes.Warrior;
-    this.maxHealth = 150;
-    this.strength = 10;
-    this.dexterity = 3;
-    this.intelligence = 1;
+    this.heroPath = PathTypes.Ranger;
+    this.maxHealth = 120;
+    this.strength = 5;
+    this.dexterity = 10;
+    this.intelligence = 2;
     this.currentExp = 0;
     this.nextLevelExp = 100;
     this.currentLevel = 1;
@@ -23,12 +23,12 @@ public class Warrior extends Heroes {
   }
   
   /* The levelUp abstract method is overwritten, 
-     so it can contain attribute changes specific to the Warrior class. */
+     so it can contain attribute changes specific to the Ranger class. */
   @Override
   protected void levelUp(){
-    maxHealth = maxHealth + 30;
-    strength = strength + 5;
-    dexterity = dexterity + 3;
+    maxHealth = maxHealth + 20;
+    strength = strength + 2;
+    dexterity = dexterity + 5;
     intelligence = intelligence + 1;
     currentExp = currentExp - nextLevelExp;
     /* The value is floor'ed and cast into an int since the nextLevelExp value can only be a whole number. */

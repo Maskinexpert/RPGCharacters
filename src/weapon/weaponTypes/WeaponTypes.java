@@ -1,18 +1,10 @@
 package weapon.weaponTypes;
 
+/* The WeaponTypes enum is the list of all available weapon types. */
 public enum WeaponTypes {
+  
   Melee,
   Ranged,
   Magic
   
-  /*public final int weaponType;
-  
-  WeaponTypes(int weaponType) {
-    this.weaponType = weaponType;
-  }    
-  
-  public int getWeaponType() {
-    return this.weaponType;
-  }*/
-
 }
