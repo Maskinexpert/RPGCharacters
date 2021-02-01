@@ -18,7 +18,7 @@ Running the .jar file will showcase the final requirement.
 
 4. The RPG Characters should have a basic leveling system.
 
-5.The RPG Characters should have 3 different classes with different attribute values:
+5. The RPG Characters should have 3 different classes with different attribute values:
     1. Warrior.
     2. Ranger.
     3. Mage.
